@@ -2,9 +2,9 @@
   "name": "my-chatbot",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js", // 사용자의 메인 파일 이름 (예: app.js, index.js 등)
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js", // 이 부분을 추가하세요.
+    "start": "node server.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
