@@ -44,9 +44,8 @@ app.post('/api/chat', async (req, res) => {
     }
 });
 
-// 플랫폼이 지정한 PORT를 사용하고, 없다면 3000번을 기본값으로 사용
-const PORT = process.env.PORT || 3000; 
-app.listen(PORT, () => {
-    // 이제 localhost 주소를 명시하지 않는 것이 좋습니다.
-    console.log(`서버가 ${PORT}번 포트에서 실행 중입니다.`); 
+const port = process.env.PORT || 3000;
+// '0.0.0.0'을 추가하여 모든 IP 주소에서 들어오는 연결을 허용합니다.
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server listening on port ${port}`);
 });
